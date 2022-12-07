@@ -5,7 +5,6 @@ import os
 from classe import *
 import tempfile
 
-
 sg.theme("Black")
 
 menu_def = [
@@ -68,7 +67,6 @@ def main():
         if event == "Exit" or event == sg.WINDOW_CLOSED:
             break
         try:
-            # Abrir a imagem
             if event in ["Importar imagem","Importar Web"]:
                 filename = open_image(tmp_file,event,window)
                 
@@ -87,14 +85,12 @@ def main():
             if event in ["JPEG","PNG","BMP"]:
                 image_converter(tmp_file,'saved',event)
     
-            # infos da imagem
+            # METADADOS
             if event == "Sobre a imagem":
                 openInfoWindow(filename,window)
             if event == "Mostrar Localização":
                 GPSLocation(filename)
 
-
-            # Eventos para edição da imagem
             if event in ["Normal","P/B","QTD Cor","Sepia",
             'Brilho','Cores','Contraste','Nitidez']:
                 actualeffect = event

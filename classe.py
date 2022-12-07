@@ -115,7 +115,6 @@ def get_exif_data(path):
     except OSError:
         info = {}
 
-    #Se não encontrar o arquivo
     if info is None:
         info = {}
     for tag, value in info.items():
