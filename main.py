@@ -14,7 +14,7 @@ menu_def = [
 ['Filtros',['Efeitos', ['Normal','P/B', 'QTD Cor','Sepia','Brilho','Cores','Contraste','Nitidez'],
 'Blur',['SBlur','BoxBlur','GaussianBlur'],
 'Contour','Edge Enhance','Emboss','Find Edges']],
-['Espelhar',['FLIP_TOP_BOTTOM','FLIP_LEFT_RIGHT','TRANSPOSE']],
+['Espelhar',['Horizontalmente','Verticalmente','TRANSPOSE']],
 ['Redimensionar',['Redimensionar Imagem']],
 ]
 
